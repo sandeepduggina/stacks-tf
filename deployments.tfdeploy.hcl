@@ -13,7 +13,7 @@ deployment "qa" {
     identity_token        = identity_token.gcp.jwt
     audience              = "//iam.googleapis.com/projects/562684088943/locations/global/workloadIdentityPools/tfstacks-pools/providers/tfstacks-pools"
     service_account_email = "terraform-stack@scenic-firefly-476508-i4.iam.gserviceaccount.com"
-    network_name          = "qa-vpc"
+    network_name          = "qa-vpc-dr"
   }
 }
 
