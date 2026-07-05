@@ -15,7 +15,7 @@ deployment "qa" {
     service_account_email = "terraform-stack@scenic-firefly-476508-i4.iam.gserviceaccount.com"
     network_name          = "qa-vpc-dr"
   }
-  destroy = false
+  destroy = true
 }
 
 deployment "qa-dr" {
