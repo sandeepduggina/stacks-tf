@@ -6,6 +6,7 @@ variable "project_id" {
 variable "identity_token" {
   description = "JWT from identity_token.gcp.jwt (injected per deployment run)."
   type        = string
+  ephemeral   = true
 }
 
 variable "audience" {
