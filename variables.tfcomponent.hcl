@@ -3,17 +3,17 @@ variable "project_id" {
   type        = string
 }
 
-variable "google_audience" {
-  description = "JWT audience from WIF provider (jwt_audience)."
+variable "identity_token" {
+  description = "JWT from identity_token.gcp.jwt (injected per deployment run)."
   type        = string
 }
 
-variable "google_token_file" {
-  description = "Path to JWT token file from identity_token.gcp.token_file."
+variable "audience" {
+  description = "WIF provider audience (jwt_audience output from identity-tokens setup)."
   type        = string
 }
 
-variable "google_service_account_email" {
+variable "service_account_email" {
   description = "GCP service account email for Stacks impersonation."
   type        = string
 }
